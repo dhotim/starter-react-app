@@ -1,5 +1,5 @@
 {
-  "name": "starter-react-app",
+  "name": "groupfinance",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -28,15 +28,57 @@
     ]
   },
   "dependencies": {
-    "express": "^4.17.3"
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.12.3",
+    "@sentry/react": "^7.51.0",
+    "@tanstack/react-query": "^4.29.5",
+    "@tanstack/react-query-devtools": "^4.29.6",
+    "apexcharts": "^3.40.0",
+    "axios": "^1.4.0",
+    "create-color": "^2.0.4",
+    "date-fns": "^2.30.0",
+    "eslint-config-react-app": "^7.0.1",
+    "express": "^4.18.2",
+    "firebase": "^9.22.2",
+    "qs": "^6.11.1",
+    "react": "^18.2.0",
+    "react-apexcharts": "^1.4.0",
+    "react-dom": "^18.2.0",
+    "react-number-format": "^5.1.4",
+    "react-router-dom": "^6.11.1",
+    "react-scripts": "^5.0.1",
+    "styled-components": "^5.3.10",
+    "typescript": "^5.0.4",
+    "workbox-core": "^6.5.4",
+    "workbox-expiration": "^6.5.4",
+    "workbox-precaching": "^6.5.4",
+    "workbox-routing": "^6.5.4",
+    "workbox-strategies": "^6.5.4"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.4"
+    "@types/jest": "^29.4.0",
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/styled-components": "^5.1.24",
+    "eslint": "^8.31.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "lint-staged": "^13.2.2"
+  },
+  "overrides": {
+    "react-scripts": {
+      "typescript": "^5"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix --max-warnings=0",
+      "prettier --write"
+    ],
+    "*.{css,js,json,md,html,yml,yaml}": "prettier --write"
   }
 }
